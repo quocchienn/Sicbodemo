@@ -1,447 +1,447 @@
 /* CSS Variables for easy theme management */
-:root {
-    -[span_36](start_span)-primary-bg: linear-gradient(135deg, #1e3c72, #2a5298);[span_36](end_span)
-    -[span_37](start_span)-secondary-bg: rgba(255, 255, 255, 0.1);[span_37](end_span)
-    -[span_38](start_span)-border-color: #00ff00;[span_38](end_span)
-    -[span_39](start_span)-highlight-color: #ffd700;[span_39](end_span)
-    -[span_40](start_span)-text-color: white;[span_40](end_span)
-    -[span_41](start_span)-dice-bg: white;[span_41](end_span)
-    -[span_42](start_span)-dice-text: #333;[span_42](end_span)
-    -[span_43](start_span)-btn-primary-bg: linear-gradient(45deg, #ff4d4d, #cc0000);[span_43](end_span)
-    -[span_44](start_span)-btn-secondary-bg: linear-gradient(45deg, #4ecdc4, #44a08d);[span_44](end_span)
-    -[span_45](start_span)-chip-10-bg: #ff4757;[span_45](end_span)
-    -[span_46](start_span)-chip-50-bg: #3742fa;[span_46](end_span)
-    -[span_47](start_span)-chip-100-bg: #2ed573;[span_47](end_span)
-    -[span_48](start_span)-chip-500-bg: #ffa502;[span_48](end_span)
-    -[span_49](start_span)-win-color: #4ecdc4;[span_49](end_span)
-    -[span_50](start_span)-lose-color: #ff6b6b;[span_50](end_span)
-    -[span_51](start_span)-bet-selected-bg: linear-gradient(145deg, #38a169, #2f855a);[span_51](end_span)
-    -[span_52](start_span)-bet-hover-shadow: rgba(255, 215, 0, 0.5);[span_52](end_span)
-}
+        :root {
+            --primary-bg: linear-gradient(135deg, #1e3c72, #2a5298);
+            --secondary-bg: rgba(255, 255, 255, 0.1);
+            --border-color: #00ff00;
+            --highlight-color: #ffd700;
+            --text-color: white;
+            --dice-bg: white;
+            --dice-text: #333;
+            --btn-primary-bg: linear-gradient(45deg, #ff4d4d, #cc0000);
+            --btn-secondary-bg: linear-gradient(45deg, #4ecdc4, #44a08d);
+            --chip-10-bg: #ff4757;
+            --chip-50-bg: #3742fa;
+            --chip-100-bg: #2ed573;
+            --chip-500-bg: #ffa502;
+            --win-color: #4ecdc4;
+            --lose-color: #ff6b6b;
+            --bet-selected-bg: linear-gradient(145deg, #38a169, #2f855a);
+            --bet-hover-shadow: rgba(255, 215, 0, 0.5);
+        }
 
-/* Base Styles */
-* {
-    [span_53](start_span)margin: 0;[span_53](end_span)
-    [span_54](start_span)padding: 0;[span_54](end_span)
-    [span_55](start_span)box-sizing: border-box;[span_55](end_span)
-}
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    [span_56](start_span)font-family: 'Arial', sans-serif;[span_56](end_span)
-    /* Giữ font Arial cho body */
-    [span_57](start_span)background: var(--primary-bg);[span_57](end_span)
-    [span_58](start_span)color: var(--text-color);[span_58](end_span)
-    [span_59](start_span)min-height: 100vh;[span_59](end_span)
-    [span_60](start_span)padding: 20px;[span_60](end_span)
-    [span_61](start_span)display: flex;[span_61](end_span)
-    [span_62](start_span)justify-content: center;[span_62](end_span)
-    [span_63](start_span)align-items: center;[span_63](end_span)
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            /* Giữ font Arial cho body */
+            background: var(--primary-bg);
+            color: var(--text-color);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.game-container {
-    [span_64](start_span)max-width: 900px;[span_64](end_span)
-    [span_65](start_span)width: 100%;[span_65](end_span)
-    [span_66](start_span)margin: 0 auto;[span_66](end_span)
-    [span_67](start_span)background: var(--secondary-bg);[span_67](end_span)
-    [span_68](start_span)border-radius: 20px;[span_68](end_span)
-    [span_69](start_span)padding: 30px;[span_69](end_span)
-    [span_70](start_span)backdrop-filter: blur(10px);[span_70](end_span)
-    [span_71](start_span)box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);[span_71](end_span)
-    [span_72](start_span)border: 1px solid rgba(255, 255, 255, 0.2);[span_72](end_span)
-}
+        .game-container {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            background: var(--secondary-bg);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
 
-/* Header */
-.header {
-    [span_73](start_span)text-align: center;[span_73](end_span)
-    [span_74](start_span)margin-bottom: 30px;[span_74](end_span)
-}
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-.header h1 {
-    [span_75](start_span)font-size: 2.2em;[span_75](end_span)
-    [span_76](start_span)text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);[span_76](end_span)
-    [span_77](start_span)margin-bottom: 10px;[span_77](end_span)
-    [span_78](start_span)color: var(--highlight-color);[span_78](end_span)
-}
+        .header h1 {
+            font-size: 2.2em;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+            margin-bottom: 10px;
+            color: var(--highlight-color);
+        }
 
-.header p {
-    [span_79](start_span)font-size: 1.1em;[span_79](end_span)
-    [span_80](start_span)opacity: 0.9;[span_80](end_span)
-}
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
 
-/* Game Info */
-.game-info {
-    [span_81](start_span)display: flex;[span_81](end_span)
-    [span_82](start_span)justify-content: space-around;[span_82](end_span)
-    [span_83](start_span)align-items: center;[span_83](end_span)
-    [span_84](start_span)margin-bottom: 25px;[span_84](end_span)
-    [span_85](start_span)background: rgba(0, 0, 0, 0.2);[span_85](end_span)
-    [span_86](start_span)padding: 15px;[span_86](end_span)
-    [span_87](start_span)border-radius: 10px;[span_87](end_span)
-    [span_88](start_span)border: 1px solid rgba(255, 255, 255, 0.1);[span_88](end_span)
-}
+        /* Game Info */
+        .game-info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 25px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-.balance, .total-bet {
-    [span_89](start_span)font-size: 1.4em;[span_89](end_span)
-    [span_90](start_span)font-weight: bold;[span_90](end_span)
-    [span_91](start_span)color: var(--highlight-color);[span_91](end_span)
-    [span_92](start_span)display: flex;[span_92](end_span)
-    [span_93](start_span)align-items: center;[span_93](end_span)
-    [span_94](start_span)gap: 8px;[span_94](end_span)
-}
+        .balance, .total-bet {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: var(--highlight-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-/* Dice Container */
-.dice-container {
-    [span_95](start_span)display: flex;[span_95](end_span)
-    [span_96](start_span)justify-content: center;[span_96](end_span)
-    [span_97](start_span)gap: 25px;[span_97](end_span)
-    [span_98](start_span)margin: 35px 0;[span_98](end_span)
-}
+        /* Dice Container */
+        .dice-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 35px 0;
+        }
 
-.dice {
-    [span_99](start_span)width: 90px;[span_99](end_span)
-    [span_100](start_span)height: 90px;[span_100](end_span)
-    [span_101](start_span)background: var(--dice-bg);[span_101](end_span)
-    [span_102](start_span)color: var(--dice-text);[span_102](end_span)
-    [span_103](start_span)border-radius: 12px;[span_103](end_span)
-    [span_104](start_span)display: flex;[span_104](end_span)
-    [span_105](start_span)align-items: center;[span_105](end_span)
-    [span_106](start_span)justify-content: center;[span_106](end_span)
-    [span_107](start_span)font-size: 2.5em;[span_107](end_span)
-    [span_108](start_span)font-weight: bold;[span_108](end_span)
-    [span_109](start_span)box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);[span_109](end_span)
-    [span_110](start_span)transition: transform 0.3s ease, background 0.3s ease;[span_110](end_span)
-    [span_111](start_span)border: 2px solid #ccc;[span_111](end_span)
-    [span_112](start_span)perspective: 1000px;[span_112](end_span)
-}
+        .dice {
+            width: 90px;
+            height: 90px;
+            background: var(--dice-bg);
+            color: var(--dice-text);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, background 0.3s ease;
+            border: 2px solid #ccc;
+            perspective: 1000px;
+        }
 
-.dice.rolling {
-    [span_113](start_span)animation: diceFlip 0.6s infinite ease-out;[span_113](end_span)
-    [span_114](start_span)box-shadow: 0 6px 25px rgba(255, 215, 0, 0.7);[span_114](end_span)
-}
+        .dice.rolling {
+            animation: diceFlip 0.6s infinite ease-out;
+            box-shadow: 0 6px 25px rgba(255, 215, 0, 0.7);
+        }
 
-@keyframes diceFlip {
-    [span_115](start_span)0% { transform: rotateY(0deg);[span_115](end_span) }
-    [span_116](start_span)50% { transform: rotateY(180deg);[span_116](end_span) }
-    [span_117](start_span)100% { transform: rotateY(360deg);[span_117](end_span) }
-}
+        @keyframes diceFlip {
+            0% { transform: rotateY(0deg); }
+            50% { transform: rotateY(180deg); }
+            100% { transform: rotateY(360deg); }
+        }
 
-/* Betting Board */
-.betting-board {
-    [span_118](start_span)display: grid;[span_118](end_span)
-    [span_119](start_span)grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));[span_119](end_span)
-    [span_120](start_span)gap: 12px;[span_120](end_span)
-    [span_121](start_span)margin: 30px 0;[span_121](end_span)
-    [span_122](start_span)background: rgba(0, 0, 0, 0.4);[span_122](end_span)
-    [span_123](start_span)padding: 25px;[span_123](end_span)
-    [span_124](start_span)border-radius: 18px;[span_124](end_span)
-    [span_125](start_span)box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);[span_125](end_span)
-}
+        /* Betting Board */
+        .betting-board {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+            gap: 12px;
+            margin: 30px 0;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+        }
 
-.bet-option {
-    [span_126](start_span)background: linear-gradient(145deg, #4a5568, #2d3748);[span_126](end_span)
-    [span_127](start_span)border: 2px solid transparent;[span_127](end_span)
-    [span_128](start_span)border-radius: 12px;[span_128](end_span)
-    [span_129](start_span)padding: 15px 10px;[span_129](end_span)
-    [span_130](start_span)text-align: center;[span_130](end_span)
-    [span_131](start_span)cursor: pointer;[span_131](end_span)
-    [span_132](start_span)transition: all 0.3s ease;[span_132](end_span)
-    [span_133](start_span)position: relative;[span_133](end_span)
-    [span_134](start_span)min-height: 85px;[span_134](end_span)
-    [span_135](start_span)display: flex;[span_135](end_span)
-    [span_136](start_span)flex-direction: column;[span_136](end_span)
-    [span_137](start_span)justify-content: center;[span_137](end_span)
-    [span_138](start_span)box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);[span_138](end_span)
-}
+        .bet-option {
+            background: linear-gradient(145deg, #4a5568, #2d3748);
+            border: 2px solid transparent;
+            border-radius: 12px;
+            padding: 15px 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            min-height: 85px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
 
-.bet-option:hover {
-    [span_139](start_span)border-color: var(--highlight-color);[span_139](end_span)
-    [span_140](start_span)transform: translateY(-3px);[span_140](end_span)
-    [span_141](start_span)box-shadow: 0 6px 20px var(--bet-hover-shadow);[span_141](end_span)
-}
+        .bet-option:hover {
+            border-color: var(--highlight-color);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px var(--bet-hover-shadow);
+        }
 
-.bet-option.selected {
-    [span_142](start_span)border-color: var(--border-color);[span_142](end_span)
-    [span_143](start_span)background: var(--bet-selected-bg);[span_143](end_span)
-    [span_144](start_span)box-shadow: 0 4px 15px rgba(0, 255, 0, 0.4);[span_144](end_span)
-}
+        .bet-option.selected {
+            border-color: var(--border-color);
+            background: var(--bet-selected-bg);
+            box-shadow: 0 4px 15px rgba(0, 255, 0, 0.4);
+        }
 
-.bet-option .label {
-    [span_145](start_span)font-weight: bold;[span_145](end_span)
-    [span_146](start_span)margin-bottom: 5px;[span_146](end_span)
-    [span_147](start_span)font-size: 1.1em;[span_147](end_span)
-    [span_148](start_span)color: var(--text-color);[span_148](end_span)
-}
+        .bet-option .label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+            color: var(--text-color);
+        }
 
-.bet-option .odds {
-    [span_149](start_span)font-size: 0.85em;[span_149](end_span)
-    [span_150](start_span)color: var(--highlight-color);[span_150](end_span)
-    [span_151](start_span)opacity: 0.9;[span_151](end_span)
-}
+        .bet-option .odds {
+            font-size: 0.85em;
+            color: var(--highlight-color);
+            opacity: 0.9;
+        }
 
-.bet-amount {
-    [span_152](start_span)position: absolute;[span_152](end_span)
-    [span_153](start_span)top: -12px;[span_153](end_span)
-    [span_154](start_span)right: -12px;[span_154](end_span)
-    [span_155](start_span)background: var(--lose-color);[span_155](end_span)
-    [span_156](start_span)color: white;[span_156](end_span)
-    [span_157](start_span)border-radius: 50%;[span_157](end_span)
-    [span_158](start_span)width: 30px;[span_158](end_span)
-    [span_159](start_span)height: 30px;[span_159](end_span)
-    [span_160](start_span)display: flex;[span_160](end_span)
-    [span_161](start_span)align-items: center;[span_161](end_span)
-    [span_162](start_span)justify-content: center;[span_162](end_span)
-    [span_163](start_span)font-size: 0.9em;[span_163](end_span)
-    [span_164](start_span)font-weight: bold;[span_164](end_span)
-    [span_165](start_span)border: 2px solid white;[span_165](end_span)
-    [span_166](start_span)box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);[span_166](end_span)
-    [span_167](start_span)animation: popIn 0.3s ease-out;[span_167](end_span)
-}
+        .bet-amount {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            background: var(--lose-color);
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9em;
+            font-weight: bold;
+            border: 2px solid white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            animation: popIn 0.3s ease-out;
+        }
 
-@keyframes popIn {
-    [span_168](start_span)0% { transform: scale(0.5);[span_168](end_span) opacity: 0; }
-    [span_169](start_span)100% { transform: scale(1); opacity: 1;[span_169](end_span) }
-}
+        @keyframes popIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
 
-/* Controls */
-.controls {
-    [span_170](start_span)display: flex;[span_170](end_span)
-    [span_171](start_span)justify-content: center;[span_171](end_span)
-    [span_172](start_span)gap: 20px;[span_172](end_span)
-    [span_173](start_span)margin: 30px 0;[span_173](end_span)
-    [span_174](start_span)flex-wrap: wrap;[span_174](end_span)
-}
+        /* Controls */
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
 
-.btn {
-    [span_175](start_span)padding: 14px 28px;[span_175](end_span)
-    [span_176](start_span)border: none;[span_176](end_span)
-    [span_177](start_span)border-radius: 30px;[span_177](end_span)
-    [span_178](start_span)font-size: 1.05em;[span_178](end_span)
-    [span_179](start_span)font-weight: bold;[span_179](end_span)
-    [span_180](start_span)cursor: pointer;[span_180](end_span)
-    [span_181](start_span)transition: all 0.3s ease;[span_181](end_span)
-    [span_182](start_span)text-transform: uppercase;[span_182](end_span)
-    [span_183](start_span)letter-spacing: 1px;[span_183](end_span)
-    [span_184](start_span)box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);[span_184](end_span)
-}
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.05em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
 
-.btn-primary {
-    [span_185](start_span)background: var(--btn-primary-bg);[span_185](end_span)
-    [span_186](start_span)color: white;[span_186](end_span)
-}
+        .btn-primary {
+            background: var(--btn-primary-bg);
+            color: white;
+        }
 
-.btn-secondary {
-    [span_187](start_span)background: var(--btn-secondary-bg);[span_187](end_span)
-    [span_188](start_span)color: white;[span_188](end_span)
-}
+        .btn-secondary {
+            background: var(--btn-secondary-bg);
+            color: white;
+        }
+        
+        /* New button style for Auto Roll */
+        .btn-auto {
+            background: linear-gradient(45deg, #1abc9c, #16a085);
+            /* Greenish-blue */
+            color: white;
+        }
 
-/* New button style for Auto Roll */
-.btn-auto {
-    [span_189](start_span)background: linear-gradient(45deg, #1abc9c, #16a085);[span_189](end_span)
-    /* Greenish-blue */
-    [span_190](start_span)color: white;[span_190](end_span)
-}
+        .btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
 
-.btn:hover {
-    [span_191](start_span)transform: translateY(-3px) scale(1.02);[span_191](end_span)
-    [span_192](start_span)box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);[span_192](end_span)
-}
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
 
-.btn:disabled {
-    [span_193](start_span)opacity: 0.6;[span_193](end_span)
-    [span_194](start_span)cursor: not-allowed;[span_194](end_span)
-    [span_195](start_span)transform: none;[span_195](end_span)
-    [span_196](start_span)box-shadow: none;[span_196](end_span)
-}
+        /* Chip Selector */
+        .chip-selector {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
 
-/* Chip Selector */
-.chip-selector {
-    [span_197](start_span)display: flex;[span_197](end_span)
-    [span_198](start_span)justify-content: center;[span_198](end_span)
-    [span_199](start_span)gap: 15px;[span_199](end_span)
-    [span_200](start_span)margin: 25px 0;[span_200](end_span)
-    [span_201](start_span)flex-wrap: wrap;[span_201](end_span)
-}
+        .chip {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: 3px solid var(--highlight-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        }
 
-.chip {
-    [span_202](start_span)width: 55px;[span_202](end_span)
-    [span_203](start_span)height: 55px;[span_203](end_span)
-    [span_204](start_span)border-radius: 50%;[span_204](end_span)
-    [span_205](start_span)border: 3px solid var(--highlight-color);[span_205](end_span)
-    [span_206](start_span)display: flex;[span_206](end_span)
-    [span_207](start_span)align-items: center;[span_207](end_span)
-    [span_208](start_span)justify-content: center;[span_208](end_span)
-    [span_209](start_span)cursor: pointer;[span_209](end_span)
-    [span_210](start_span)font-weight: bold;[span_210](end_span)
-    [span_211](start_span)font-size: 1.1em;[span_211](end_span)
-    [span_212](start_span)color: white;[span_212](end_span)
-    [span_213](start_span)transition: all 0.3s ease;[span_213](end_span)
-    [span_214](start_span)box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);[span_214](end_span)
-}
+        .chip.chip-10 { background: var(--chip-10-bg); }
+        .chip.chip-50 { background: var(--chip-50-bg); }
+        .chip.chip-100 { background: var(--chip-100-bg); }
+        .chip.chip-500 { background: var(--chip-500-bg); }
 
-[span_215](start_span).chip.chip-10 { background: var(--chip-10-bg);[span_215](end_span) }
-[span_216](start_span).chip.chip-50 { background: var(--chip-50-bg);[span_216](end_span) }
-[span_217](start_span).chip.chip-100 { background: var(--chip-100-bg);[span_217](end_span) }
-[span_218](start_span).chip.chip-500 { background: var(--chip-500-bg);[span_218](end_span) }
+        .chip.selected {
+            transform: scale(1.15);
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.9);
+            border-color: white;
+        }
 
-.chip.selected {
-    [span_219](start_span)transform: scale(1.15);[span_219](end_span)
-    [span_220](start_span)box-shadow: 0 0 25px rgba(255, 215, 0, 0.9);[span_220](end_span)
-    [span_221](start_span)border-color: white;[span_221](end_span)
-}
+        /* Result Display */
+        .result-display {
+            text-align: center;
+            margin: 25px 0;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            line-height: 1.6;
+        }
 
-/* Result Display */
-.result-display {
-    [span_222](start_span)text-align: center;[span_222](end_span)
-    [span_223](start_span)margin: 25px 0;[span_223](end_span)
-    [span_224](start_span)padding: 25px;[span_224](end_span)
-    [span_225](start_span)background: rgba(0, 0, 0, 0.3);[span_225](end_span)
-    [span_226](start_span)border-radius: 12px;[span_226](end_span)
-    [span_227](start_span)min-height: 80px;[span_227](end_span)
-    [span_228](start_span)display: flex;[span_228](end_span)
-    [span_229](start_span)flex-direction: column;[span_229](end_span)
-    [span_230](start_span)align-items: center;[span_230](end_span)
-    [span_231](start_span)justify-content: center;[span_231](end_span)
-    [span_232](start_span)border: 1px solid rgba(255, 255, 255, 0.1);[span_232](end_span)
-    [span_233](start_span)line-height: 1.6;[span_233](end_span)
-}
+        .result-text {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
 
-.result-text {
-    [span_234](start_span)font-size: 1.3em;[span_234](end_span)
-    [span_235](start_span)font-weight: bold;[span_235](end_span)
-    [span_236](start_span)margin-bottom: 5px;[span_236](end_span)
-}
+        .result-detail {
+            font-size: 1em;
+            opacity: 0.9;
+        }
 
-.result-detail {
-    [span_237](start_span)font-size: 1em;[span_237](end_span)
-    [span_238](start_span)opacity: 0.9;[span_238](end_span)
-}
+        .win {
+            color: var(--win-color);
+            animation: pulse 1s infinite alternate;
+        }
 
-.win {
-    [span_239](start_span)color: var(--win-color);[span_239](end_span)
-    [span_240](start_span)animation: pulse 1s infinite alternate;[span_240](end_span)
-}
+        .lose {
+            color: var(--lose-color);
+        }
 
-.lose {
-    [span_241](start_span)color: var(--lose-color);[span_241](end_span)
-}
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.03); opacity: 0.8; }
+        }
 
-@keyframes pulse {
-    [span_242](start_span)0% { transform: scale(1);[span_242](end_span) opacity: 1; }
-    [span_243](start_span)100% { transform: scale(1.03); opacity: 0.8;[span_243](end_span) }
-}
+        /* History */
+        .history {
+            margin-top: 35px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-/* History */
-.history {
-    [span_244](start_span)margin-top: 35px;[span_244](end_span)
-    [span_245](start_span)background: rgba(0, 0, 0, 0.3);[span_245](end_span)
-    [span_246](start_span)padding: 20px;[span_246](end_span)
-    [span_247](start_span)border-radius: 12px;[span_247](end_span)
-    [span_248](start_span)border: 1px solid rgba(255, 255, 255, 0.1);[span_248](end_span)
-}
+        .history h3 {
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 1.4em;
+            color: var(--highlight-color);
+        }
 
-.history h3 {
-    [span_249](start_span)margin-bottom: 15px;[span_249](end_span)
-    [span_250](start_span)text-align: center;[span_250](end_span)
-    [span_251](start_span)font-size: 1.4em;[span_251](end_span)
-    [span_252](start_span)color: var(--highlight-color);[span_252](end_span)
-}
+        .history-list {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-.history-list {
-    [span_253](start_span)display: flex;[span_253](end_span)
-    [span_254](start_span)gap: 10px;[span_254](end_span)
-    [span_255](start_span)flex-wrap: wrap;[span_255](end_span)
-    [span_256](start_span)justify-content: center;[span_256](end_span)
-}
+        .history-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: var(--text-color);
+            white-space: nowrap;
+        }
 
-.history-item {
-    [span_257](start_span)background: rgba(255, 255, 255, 0.15);[span_257](end_span)
-    [span_258](start_span)padding: 8px 15px;[span_258](end_span)
-    [span_259](start_span)border-radius: 20px;[span_259](end_span)
-    [span_260](start_span)font-size: 0.9em;[span_260](end_span)
-    [span_261](start_span)color: var(--text-color);[span_261](end_span)
-    [span_262](start_span)white-space: nowrap;[span_262](end_span)
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    body {
-        [span_263](start_span)padding: 15px;[span_263](end_span)
-    }
-    .game-container {
-        [span_264](start_span)padding: 20px;[span_264](end_span)
-    }
-    .header h1 {
-        [span_265](start_span)font-size: 1.8em;[span_265](end_span)
-    }
-    .game-info {
-        [span_266](start_span)flex-direction: column;[span_266](end_span)
-        [span_267](start_span)gap: 10px;[span_267](end_span)
-        [span_268](start_span)padding: 10px;[span_268](end_span)
-    }
-    .balance, .total-bet {
-        [span_269](start_span)font-size: 1.2em;[span_269](end_span)
-    }
-    .dice-container {
-        [span_270](start_span)gap: 15px;[span_270](end_span)
-    }
-    .dice {
-        [span_271](start_span)width: 70px;[span_271](end_span)
-        [span_272](start_span)height: 70px;[span_272](end_span)
-        [span_273](start_span)font-size: 2em;[span_273](end_span)
-    }
-    .betting-board {
-        [span_274](start_span)grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));[span_274](end_span)
-        [span_275](start_span)gap: 8px;[span_275](end_span)
-        [span_276](start_span)padding: 15px;[span_276](end_span)
-    }
-    .bet-option {
-        [span_277](start_span)min-height: 70px;[span_277](end_span)
-        [span_278](start_span)padding: 10px 5px;[span_278](end_span)
-    }
-    .bet-option .label {
-        [span_279](start_span)font-size: 1em;[span_279](end_span)
-    }
-    .bet-amount {
-        [span_280](start_span)width: 25px;[span_280](end_span)
-        [span_281](start_span)height: 25px;[span_281](end_span)
-        [span_282](start_span)font-size: 0.75em;[span_282](end_span)
-    }
-    .controls {
-        [span_283](start_span)flex-direction: column;[span_283](end_span)
-        [span_284](start_span)align-items: center;[span_284](end_span)
-        [span_285](start_span)gap: 15px;[span_285](end_span)
-    }
-    .btn {
-        [span_286](start_span)width: 80%;[span_286](end_span)
-        [span_287](start_span)max-width: 250px;[span_287](end_span)
-        [span_288](start_span)padding: 12px 20px;[span_288](end_span)
-    }
-    .chip-selector {
-        [span_289](start_span)gap: 10px;[span_289](end_span)
-    }
-    .chip {
-        [span_290](start_span)width: 45px;[span_290](end_span)
-        [span_291](start_span)height: 45px;[span_291](end_span)
-        [span_292](start_span)font-size: 0.9em;[span_292](end_span)
-    }
-    .result-display {
-        [span_293](start_span)padding: 15px;[span_293](end_span)
-        [span_294](start_span)min-height: 70px;[span_294](end_span)
-    }
-    .result-text {
-        [span_295](start_span)font-size: 1.1em;[span_295](end_span)
-    }
-    .result-detail {
-        [span_296](start_span)font-size: 0.9em;[span_296](end_span)
-    }
-    .history {
-        [span_297](start_span)padding: 15px;[span_297](end_span)
-    }
-    .history h3 {
-        [span_298](start_span)font-size: 1.2em;[span_298](end_span)
-    }
-    .history-item {
-        [span_299](start_span)font-size: 0.8em;[span_299](end_span)
-        [span_300](start_span)padding: 6px 12px;[span_300](end_span)
-    }
-}
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            .game-container {
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .game-info {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+            .balance, .total-bet {
+                font-size: 1.2em;
+            }
+            .dice-container {
+                gap: 15px;
+            }
+            .dice {
+                width: 70px;
+                height: 70px;
+                font-size: 2em;
+            }
+            .betting-board {
+                grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+                gap: 8px;
+                padding: 15px;
+            }
+            .bet-option {
+                min-height: 70px;
+                padding: 10px 5px;
+            }
+            .bet-option .label {
+                font-size: 1em;
+            }
+            .bet-amount {
+                width: 25px;
+                height: 25px;
+                font-size: 0.75em;
+            }
+            .controls {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            .btn {
+                width: 80%;
+                max-width: 250px;
+                padding: 12px 20px;
+            }
+            .chip-selector {
+                gap: 10px;
+            }
+            .chip {
+                width: 45px;
+                height: 45px;
+                font-size: 0.9em;
+            }
+            .result-display {
+                padding: 15px;
+                min-height: 70px;
+            }
+            .result-text {
+                font-size: 1.1em;
+            }
+            .result-detail {
+                font-size: 0.9em;
+            }
+            .history {
+                padding: 15px;
+            }
+            .history h3 {
+                font-size: 1.2em;
+            }
+            .history-item {
+                font-size: 0.8em;
+                padding: 6px 12px;
+            }
+        }
