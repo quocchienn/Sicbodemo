@@ -1,4 +1,4 @@
-class SicboGame {
+        class SicboGame {
             constructor() {
                 // DOM Elements
                 this.dom = {
