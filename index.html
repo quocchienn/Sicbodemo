@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xí Ngầu - Sicbo Game</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div class="game-container">
+        <header class="header">
+            <h1>🎲 XÍ NGẦU - SICBO 🎲</h1>
+            <p>Đặt cược và lắc xúc xắc để thắng lớn!</p>
+        </header>
+
+        <section class="game-info">
+            <div class="balance">
+                [span_0](start_span)💰 Số dư: <span id="balance">1000</span> xu[span_0](end_span)
+            </div>
+            <div class="total-bet">
+                [span_1](start_span)🎯 Tổng cược: <span id="totalBet">0</span> xu[span_1](end_span)
+            </div>
+        </section>
+
+        <section class="dice-container">
+            [span_2](start_span)<div class="dice" id="dice1">?</div>[span_2](end_span)
+            [span_3](start_span)<div class="dice" id="dice2">?</div>[span_3](end_span)
+            [span_4](start_span)<div class="dice" id="dice3">?</div>[span_4](end_span)
+        </section>
+
+        <section class="result-display">
+            [span_5](start_span)<div class="result-text" id="resultText">Chọn loại cược và nhấn "Lắc Xúc Xắc" để bắt đầu!</div>[span_5](end_span)
+        </section>
+
+        <section class="chip-selector">
+            [span_6](start_span)<div class="chip chip-10 selected" data-value="10">10</div>[span_6](end_span)
+            [span_7](start_span)<div class="chip chip-50" data-value="50">50</div>[span_7](end_span)
+            [span_8](start_span)<div class="chip chip-100" data-value="100">100</div>[span_8](end_span)
+            [span_9](start_span)<div class="chip chip-500" data-value="500">500</div>[span_9](end_span)
+        </section>
+
+        <section class="betting-board" id="bettingBoard">
+            <div class="bet-option" data-type="total" data-value="4">
+                [span_10](start_span)<div class="label">Tổng 4</div><div class="odds">1:60</div>[span_10](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="5">
+                [span_11](start_span)<div class="label">Tổng 5</div><div class="odds">1:30</div>[span_11](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="6">
+                [span_12](start_span)<div class="label">Tổng 6</div><div class="odds">1:17</div>[span_12](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="7">
+                [span_13](start_span)<div class="label">Tổng 7</div><div class="odds">1:12</div>[span_13](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="8">
+                [span_14](start_span)<div class="label">Tổng 8</div><div class="odds">1:8</div>[span_14](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="9">
+                [span_15](start_span)<div class="label">Tổng 9</div><div class="odds">1:6</div>[span_15](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="10">
+                [span_16](start_span)<div class="label">Tổng 10</div><div class="odds">1:6</div>[span_16](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="11">
+                [span_17](start_span)<div class="label">Tổng 11</div><div class="odds">1:6</div>[span_17](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="12">
+                [span_18](start_span)<div class="label">Tổng 12</div><div class="odds">1:6</div>[span_18](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="13">
+                [span_19](start_span)<div class="label">Tổng 13</div><div class="odds">1:8</div>[span_19](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="14">
+                [span_20](start_span)<div class="label">Tổng 14</div><div class="odds">1:12</div>[span_20](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="15">
+                [span_21](start_span)<div class="label">Tổng 15</div><div class="odds">1:17</div>[span_21](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="16">
+                [span_22](start_span)<div class="label">Tổng 16</div><div class="odds">1:30</div>[span_22](end_span)
+            </div>
+            <div class="bet-option" data-type="total" data-value="17">
+                [span_23](start_span)<div class="label">Tổng 17</div><div class="odds">1:60</div>[span_23](end_span)
+            </div>
+
+            <div class="bet-option" data-type="size" data-value="small">
+                [span_24](start_span)<div class="label">XỈU</div><div class="odds">1:1</div>[span_24](end_span)
+            </div>
+            <div class="bet-option" data-type="size" data-value="big">
+                [span_25](start_span)<div class="label">TÀI</div><div class="odds">1:1</div>[span_25](end_span)
+            </div>
+
+            <div class="bet-option" data-type="oddeven" data-value="odd">
+                [span_26](start_span)<div class="label">LẺ</div><div class="odds">1:1</div>[span_26](end_span)
+            </div>
+            <div class="bet-option" data-type="oddeven" data-value="even">
+                [span_27](start_span)<div class="label">CHẴN</div><div class="odds">1:1</div>[span_27](end_span)
+            </div>
+
+            <div class="bet-option" data-type="single" data-value="1">
+                [span_28](start_span)<div class="label">Số 1</div><div class="odds">1:1</div>[span_28](end_span)
+            </div>
+            <div class="bet-option" data-type="single" data-value="2">
+                [span_29](start_span)<div class="label">Số 2</div><div class="odds">1:1</div>[span_29](end_span)
+            </div>
+            <div class="bet-option" data-type="single" data-value="3">
+                [span_30](start_span)<div class="label">Số 3</div><div class="odds">1:1</div>[span_30](end_span)
+            </div>
+            <div class="bet-option" data-type="single" data-value="4">
+                [span_31](start_span)<div class="label">Số 4</div><div class="odds">1:1</div>[span_31](end_span)
+            </div>
+            <div class="bet-option" data-type="single" data-value="5">
+                [span_32](start_span)<div class="label">Số 5</div><div class="odds">1:1</div>[span_32](end_span)
+            </div>
+            <div class="bet-option" data-type="single" data-value="6">
+                [span_33](start_span)<div class="label">Số 6</div><div class="odds">1:1</div>[span_33](end_span)
+            </div>
+        </section>
+
+        <section class="controls">
+            <button class="btn btn-secondary" id="clearBtn">🗑️ Xóa Cược</button>
+        </section>
+
+        <section class="history">
+            [span_34](start_span)<h3>📊 Lịch Sử Kết Quả</h3>[span_34](end_span)
+            <div class="history-list" id="historyList">
+                [span_35](start_span)<div class="history-item">Chưa có kết quả</div>[span_35](end_span)
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script> </body>
+</html>
